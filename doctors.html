@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GORLE HOSPITAL</title>
+
+<!--------------------------------------------------->
+<!--------------------- BOOTSTRAP 4 ----------------->
+<!--------------------------------------------------->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!--------------------------------------------------->
+<!--------------------- FAVICON IMAGE --------------->
+<!--------------------------------------------------->
+<link rel="icon" type="image/x-icon" href="logo1.png">
+
+<!--------------------------------------------------->
+<!--------------------- FONT AWESOME ---------------->
+<!--------------------------------------------------->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!--------------------------------------------------->
+<!-------------- Google Fonts  ---------------------->
+<!--------------------------------------------------->
+<link href='https://fonts.googleapis.com/css?family=Angkor' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Averia Serif Libre' rel='stylesheet'>
+
+<!--------------------------------------------------->
+<!------------------------ CSS ---------------------->
+<!--------------------------------------------------->
+<link rel="stylesheet" href="style.css">
+
+
+<!--------------------------------------------------->
+<!------------------ Internal CSS ------------------->
+<!--------------------------------------------------->
+<style type="text/css">
+
+/**-----------------------------=  SECTION 02: OUR DOCTOR START    =-----------------------------------**/
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #999966;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* hover */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: red;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* hover active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/*  italic font  */
+q {font-style: italic;}
+
+/*  author */
+.author {color: white;}
+
+
+
+
+/**-----------------------------=  SECTION 03: FAQ START    =-----------------------------------**/
+
+.collapsible {
+  background-color: #999966;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+  
+
+
+/**-----------------------------=  HR TAG   =-----------------------------------**/
+/* Large rounded green border */
+hr.new5 {
+  border: 10px solid green;
+  border-radius: 5px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%=>  WebSite Name: Gorle Hospital  <=%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%=>     Made by: Ritesh Gorle      <=%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--> 
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%=>    Created: September 2022     <=%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%=>      Content: Hospital         <=%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+
+<!--------------------------------===============================------------------------------------->
+<!-----------------------------= SECTION 01: NAVIGATION BAR START =----------------------------------->
+<!--------------------------------===============================------------------------------------->
+<nav class="Fixed NAVIGATION-BAR">
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%= SECTION 01: LOGO =%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+	<div class="LOGO  UI-LOGO">
+		<a href="index.html" class="NAVIGATION-LINK"> <img src="logo1.png" width="20px" alt=""> GORLE HOSPITAL</a>
+  </div>
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%= SECTION 01: NAVIGATION BAR =%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<input type="checkbox" id="NAVIGATION" class="HIDE" />
+	<label for="NAVIGATION" class="NAVIGATION-CLEAR"><i></i><i></i><i></i></label>
+	<div class="NAVIGATION">
+		<ul class="NAVIGATION__PRODUCTS">
+			<li class="NAVIGATION__PRODUCT"><a href="index.html" class="NAVIGATION-LINK" >Home</a></li>
+			<li class="NAVIGATION__PRODUCT"><a href="doctors.html" class="NAVIGATION-LINK" >Doctors</a></li>
+			<li class="NAVIGATION__PRODUCT"><a href="medicine.html" class="NAVIGATION-LINK">Medicine</a></li>
+			<li class="NAVIGATION__PRODUCT"><a href="contact.html" class="NAVIGATION-LINK">Contact</a></li>
+		</ul>
+</div>
+
+</nav>
+<!--------------------------------===============================------------------------------------->
+<!-----------------------------=  SECTION 01: NAVIGATION BAR END  =----------------------------------->
+<!--------------------------------===============================------------------------------------->
+
+
+<!--------------------------------===============================------------------------------------->
+<!-----------------------------=  SECTION 02: OUR DOCTOR START    =----------------------------------->
+<!--------------------------------===============================------------------------------------->
+<div class="slideshow-container">
+
+<h1 align="center"  style="font-size:6vw;"  >Our Doctors</h1>
+<hr class="new5">
+
+<div class="mySlides">
+  <img src="doc1.jpg" width="260px" style="border: 5px solid red; border-radius: 50px;" alt="testimonial"> <br>
+  <q>मला वाटतं, सर्व डॉक्टर उपचार करतात, पण एक चांगला डॉक्टर प्रकृतीला बरे करू देतो. एखाद्या रुग्णाला त्याच्या आजाराला नाव दिल्यावर डॉक्टर त्याच्यासाठी खूप काही करतात. प्रकृती, वेळ आणि संयम हे तीन महान वैद्य आहेत.</q>
+  <p class="author">- Ritesh Gorle</p>
+</div>
+
+<div class="mySlides">
+  <img src="doc2.jpg" width="260px" style="border: 5px solid red; border-radius: 50px;" alt="testimonial"> <br>
+  <q>मला वाटतं, तुमचा पेशंट बरा होतो यावरून तुमचं निदान सिद्ध होत नाही, बरोबर होते आणि पुस्तकांशिवाय रोगाच्या घटनेचा अभ्यास करणे म्हणजे अज्ञात समुद्रात प्रवास करणे, तर रुग्णांशिवाय पुस्तकांचा अभ्यास करणे म्हणजे समुद्रात जाणे अजिबात नाही.</q>
+  <p class="author">- Rinku Gorle</p>
+</div>
+
+<div class="mySlides">
+  <img src="doc3.jpg" width="260px" style="border: 5px solid red; border-radius: 50px;" alt="testimonial"> <br>
+  <q>मला वाटते, सर्व ज्ञान त्याचे नैतिक मूल्य आणि त्याचे मानवी महत्त्व प्राप्त करते केवळ मानवी भावनेने ज्यामध्ये ते कार्यरत आहे. एक चांगला माणूसच असू शकतो</q>
+  <p class="author">- Bunty Gorle</p>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<br> <br>
+<!--------------------------------===============================------------------------------------->
+<!-----------------------------=     SECTION 02: OUR DOCTOR END   =----------------------------------->
+<!--------------------------------===============================------------------------------------->
+
+
+<!--------------------------------===============================------------------------------------->
+<!--------------------------------=      SECTION 03: FAQ START  =------------------------------------->
+<!--------------------------------===============================------------------------------------->
+<h1 align="center"  style="font-size:6vw;"  >FAQ</h1>
+<hr class="new5">
+
+<div class="container">
+
+  <button type="button" class="collapsible">कोविड-19 पासून गंभीर आजार होण्याचा धोका कोणाला जास्त आहे?
+           <i class="fa fa-caret-down" style="font-size:30px; float: right;"></i>
+  </button>
+<div class="content">
+  <p>वृद्ध लोक आणि ज्यांना हृदय व रक्तवाहिन्यासंबंधी रोग, मधुमेह, तीव्र श्वसन रोग आणि कर्करोग यासारख्या अंतर्निहित वैद्यकीय समस्या आहेत त्यांना गंभीर आजार होण्याची शक्यता असते.</p>
+</div>
+<button type="button" class="collapsible">माझे नाक का वाहते आणि खोकला का आहे?
+       <i class="fa fa-caret-down" style="font-size:30px; float: right;"></i>
+</button>
+<div class="content">
+  <p>सामान्य सर्दी किंवा वरच्या श्वासोच्छवासाच्या संसर्गामुळे नाकातील श्लेष्मल झिल्लीच्या अस्तरात जळजळ होते, परिणामी खूप जास्त श्लेष्मा होतो. वाहणारे नाक व्यतिरिक्त, सामान्य सर्दी कधीकधी अनुनासिक रक्तसंचय होऊ शकते. इतर लक्षणांमध्ये खोकला, घसा खवखवणे आणि थकवा यांचा समावेश होतो.</p>
+</div>
+<button type="button" class="collapsible">कर्करोगाचा इलाज आहे का?
+  <i class="fa fa-caret-down" style="font-size:30px; float: right;"></i>
+</button>
+<div class="content">
+  <p>कोणत्याही प्रकारच्या कर्करोगावर कोणतेही उपचार नाहीत, परंतु असे उपचार आहेत जे तुम्हाला बरे करू शकतात.</p>
+</div>
+  
+</div>
+<!--------------------------------===============================------------------------------------->
+<!--------------------------------=      SECTION 03: FAQ END    =------------------------------------->
+<!--------------------------------===============================------------------------------------->
+<br> <br>
+
+<!--------------------------------===============================------------------------------------->
+<!--------------------------------=   SECTION 04: FOOTER START  =------------------------------------->
+<!--------------------------------===============================------------------------------------->
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%= SECTION 04: CONTAINER START =%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<footer class="container-fluid">
+
+<div class="foot" align="center">
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%= SECTION 04: SOCAIL ICON =%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div class="horz ">
+<a href="index.html"><i class="fa fa-twitter"></i></a>
+<a href="index.html"><i class="fa fa-instagram"></i></a>
+<a href="index.html"><i class="fa fa-facebook"></i></a>
+<a href="index.html"><i class="fa fa-whatsapp"></i></a>
+</div>
+
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%= SECTION 04: LINKS =%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div class="horz">
+<ul>
+<li><a href="doctors.html">FAQ's</a></li>
+<li><a href="doctors.html">Doctors</a></li>
+<li><a href="medicine.html">Medicine</a></li>
+<li><a href="contact.html">About Us</a></li>
+<li><a href="contact.html">Contact us</a></li>
+</ul>
+</div>
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%= SECTION 04: RIGHTS =%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div class="horz ">
+Gorle Hospital © 2022 *All rights reserved 
+</div>
+  
+</footer><!--%%%%%%%%%%%%%%%%%%%%%%%%%%= SECTION 04: CONTAINER END =%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+
+<!--------------------------------===============================------------------------------------->
+<!--------------------------------=    SECTION 04: FOOTER END   =------------------------------------->
+<!--------------------------------===============================------------------------------------->
+ 
+
+<script type="text/javascript">
+
+// doctors.html Testimonial
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+
+// doctors.html FAQ
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+  
+</script>
+
+
+</body>
+</html>

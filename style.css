@@ -1,0 +1,764 @@
+/* WebSite Name: Gorle Hospital
+   Made by: Ritesh Gorle
+   Created: September 2022
+   Content: Hospital
+*/
+
+
+/*****************************************
+
+Table Of Contents:
+
+01. BASIC CSS Style
+02. SECTION 01: FIRST HEADING
+03. SECTION 01: SCROLL DOWN 
+04. SECTION 02: NAVIGATION BAR
+05. SECTION 03: FIRST CONTENT 
+06. SECTION 04: SECOND CONTENT
+07. SECTION 05: CARDS 
+08. SECTION 07: OUR TEAM 
+09. SECTION 08: FOOTER
+
+******************************************/
+
+
+/******************************/
+/*   01. BASIC CSS Style      */
+/******************************/   
+* {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Averia Serif Libre';
+	line-height: 1.6;
+	margin: 0;
+}
+
+.header {
+	height: 100vh;
+}
+
+.header {
+	position: relative;
+}
+
+
+.header h1 {
+	color: black;
+	font-family: 'Angkor';
+}
+
+
+.header {
+	background-color: rgb(255, 0, 0);
+}
+
+
+
+
+/***********************************/
+/* 02. SECTION 01: FIRST HEADING   */
+/**********************************/   
+.FIRST-HEADING > span {
+  text-transform: uppercase;
+  animation: glow 2s ease-in-out infinite;
+  font-size: 90px;
+  font-family: 'Angkor';
+}
+
+@keyframes glow {
+  0%, 100% {
+    color: #FFF;
+    text-shadow: 0 0 10px #0652DD, 0 0 50px #0652DD, 0 0 100px #0652DD;
+  }
+  
+  10%, 90% {
+    color: #111;
+    text-shadow: none;
+  }
+}
+
+.FIRST-HEADING > span:nth-child(2) {
+	animation-delay: 0.25s;
+}
+
+.FIRST-HEADING > span:nth-child(3) {
+	animation-delay: 0.5s;
+}
+
+.FIRST-HEADING > span:nth-child(4) {
+	animation-delay: 0.75s;
+}
+
+.FIRST-HEADING > span:nth-child(5) {
+	animation-delay: 1s;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+ .FIRST-HEADING > span {
+  
+  font-size: 40px;
+} 
+}
+
+
+/************************************/
+/*   03. SECTION 01: SCROLL DOWN    */
+/***********************************/   
+.SCROLL-DOWN{
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.SCROLL-DOWN span{
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-bottom: 8px double black;
+	border-right: 8px double black;
+	transform: rotate(45deg);
+	margin: -10px;
+	animation: animate 2s infinite;
+}
+
+.SCROLL-DOWN span:nth-child(2)
+{
+	animation-delay: -0.2s;
+}
+
+.SCROLL-DOWN span:nth-child(3)
+{
+	animation-delay: -0.4s;
+}
+
+@keyframes animate{
+	
+	0%{
+		opacity: 0;
+		transform: rotate(45deg) translate(-20px, -20px);
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+		transform: rotate(45deg) translate(20px, 20px);
+	}
+}
+
+
+
+/**************************************/
+/*   04. SECTION 02: NAVIGATION BAR   */
+/**************************************/   
+.NAVIGATION-BAR {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	background-color: #ff9900;
+	-webkit-box-shadow: 0 14px 14px -14px rgba(0, 0, 0, .75);
+	-moz-box-shadow: 0 14px 14px -14px rgba(0, 0, 0, .75);
+	box-shadow: 0 14px 14px -14px rgba(0, 0, 0, .75);
+}
+
+.Fixed {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+.HIDE {
+	display: none;
+}
+
+.UI-LOGO {
+	font-size: 2.5rem;
+	margin-bottom: .5rem;
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.2;
+	color: inherit;
+}
+
+.NAVIGATION__PRODUCTS {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+.NAVIGATION-LINK {
+	color: black;
+	text-decoration: none;
+}
+
+.NAVIGATION-LINK:hover {
+	color: white;
+	text-decoration: none;
+}
+
+
+.LOGO {
+	margin: 0;
+	font-size: 1.25em;
+	font-weight: 900;
+}
+
+.LOGO a {
+	padding: 10px 15px;
+	text-align: center;
+	display: block;
+}
+
+
+
+.NAVIGATION__PRODUCTS {
+	margin-top: 5px;
+
+}
+
+.LOGO .NAVIGATION-LINK,
+.NAVIGATION__PRODUCTS .NAVIGATION-LINK {
+	padding: 10px 15px;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+}
+
+.NAVIGATION__PRODUCTS .NAVIGATION-LINK {
+	color: black;
+	font-size: 0.99rem;
+	text-decoration: none;
+}
+
+.NAVIGATION__PRODUCTS .NAVIGATION-LINK:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.NAVIGATION__PRODUCT:nth-child(1) .NAVIGATION-LINK::before {
+	content: '✿ ';
+}
+
+.NAVIGATION__PRODUCT:nth-child(2) .NAVIGATION-LINK::before {
+	content: '✿ ';
+}
+
+.NAVIGATION__PRODUCT:nth-child(3) .NAVIGATION-LINK::before {
+	content: '✿ ';
+}
+
+.NAVIGATION__PRODUCT:nth-child(4) .NAVIGATION-LINK::before {
+	content: '✿ ';
+}
+
+@media (min-width: 800px) {
+
+	.NAVIGATION-BAR,
+	.NAVIGATION__PRODUCTS {
+		display: flex;
+	}
+
+	.NAVIGATION-BAR {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.NAVIGATION-BAR {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+@media screen and (max-width: 799px) {
+	.NAVIGATION {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+		background-color: yellow;
+		opacity: 0;
+		transition: all 0.2s ease;
+	}
+
+	.NAVIGATION .NAVIGATION__PRODUCTS {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 100%;
+		padding-inline-start: 0;
+	}
+
+	.NAVIGATION .NAVIGATION__PRODUCTS .NAVIGATION__PRODUCT {
+		display: block;
+		float: none;
+		width: 100%;
+		text-align: right;
+		margin-bottom: 10px;
+	}
+
+	.NAVIGATION .NAVIGATION__PRODUCTS .NAVIGATION__PRODUCT:nth-child(1) a {
+		transition-delay: 0.2s;
+	}
+
+	.NAVIGATION .NAVIGATION__PRODUCTS .NAVIGATION__PRODUCT:nth-child(2) a {
+		transition-delay: 0.3s;
+	}
+
+	.NAVIGATION .NAVIGATION__PRODUCTS .NAVIGATION__PRODUCT:nth-child(3) a {
+		transition-delay: 0.4s;
+	}
+
+	.NAVIGATION .NAVIGATION__PRODUCTS .NAVIGATION__PRODUCT:nth-child(4) a {
+		transition-delay: 0.5s;
+	}
+
+	.NAVIGATION .NAVIGATION__PRODUCTS .NAVIGATION__PRODUCT:not(:first-child) {
+		margin-left: 0;
+	}
+
+	.NAVIGATION .NAVIGATION__PRODUCTS .NAVIGATION__PRODUCT .NAVIGATION-LINK {
+		padding: 10px 25px;
+		opacity: 0;
+		color: black;
+		font-size: 24px;
+		font-weight: 600;
+		transform: translateY(-20px);
+		transition: all 0.2s ease;
+	}
+
+	.NAVIGATION .NAVIGATION__PRODUCTS .NAVIGATION__PRODUCT .NAVIGATION-LINK:hover {
+		color: white;
+	}
+
+	.NAVIGATION-CLEAR {
+		position: absolute;
+		right: 10px;
+		top: 16px;
+		display: block;
+		width: 48px;
+		height: 48px;
+		cursor: pointer;
+		z-index: 9999;
+		border-radius: 50%;
+	}
+
+	.NAVIGATION-CLEAR i {
+		display: block;
+		width: 20px;
+		height: 2px;
+		background-color: red;
+		border-radius: 2px;
+		margin-left: 14px;
+		font-weight: 900;
+	}
+
+	.NAVIGATION-CLEAR i:nth-child(1) {
+		margin-top: 16px;
+	}
+
+	.NAVIGATION-CLEAR i:nth-child(2) {
+		margin-top: 4px;
+		opacity: 1;
+	}
+
+	.NAVIGATION-CLEAR i:nth-child(3) {
+		margin-top: 4px;
+	}
+
+}
+
+
+#NAVIGATION:checked+.NAVIGATION-CLEAR {
+	transform: rotate(45deg);
+}
+
+#NAVIGATION:checked+.NAVIGATION-CLEAR i {
+	background-color: red;
+	transition: transform 0.2s ease;
+}
+
+#NAVIGATION:checked+.NAVIGATION-CLEAR i:nth-child(1) {
+	transform: translateY(6px) rotate(180deg);
+}
+
+#NAVIGATION:checked+.NAVIGATION-CLEAR i:nth-child(2) {
+	opacity: 0;
+}
+
+#NAVIGATION:checked~.NAVIGATION__PRODUCT a {
+	display: block !important;
+}
+
+#NAVIGATION:checked+.NAVIGATION-CLEAR i:nth-child(3) {
+	transform: translateY(-6px) rotate(90deg);
+}
+
+#NAVIGATION:checked~.NAVIGATION {
+	z-index: 9990;
+	opacity: 1;
+}
+
+#NAVIGATION:checked~.NAVIGATION ul li a {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+
+
+
+/***************************************/
+/*     05. SECTION 03: FIRST CONTENT   */
+/***************************************/   
+.main{
+	margin-top: 50px;
+}
+
+.CONTENT {
+  padding: 64px;
+}
+
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.new-cont:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.large-font {
+  font-size: 48px;
+}
+
+.xlarge-font {
+  font-size: 64px
+}
+
+.Both {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: black;
+  font-weight: 600;
+  background-color: #ff9900;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.Both:hover {
+  background-color: red;
+}
+
+.photo {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  .photo {
+    margin: auto;
+  }
+}
+
+
+/* MODAL ADMISSION FORM */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.frm {
+  border-radius: 5px;
+  background-color: red;
+  padding: 20px;
+}
+
+
+/************* SECTION 07: OUR TEAM START BASIC PART ****************/
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+
+
+/***************************************/
+/*   06. SECTION 04: SECOND CONTENT    */
+/***************************************/ 
+
+#id99 {
+	background-color: #ff0000;
+	color: white;
+	border-radius: 20px;
+ 
+}
+
+#id99:hover {
+  background-color: yellow;
+  color: black;
+}
+
+
+
+/******************************/
+/*    07. SECTION 05: CARDS   */
+/******************************/   
+
+
+.crd-co {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+
+.crd {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.crd:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .crd-co {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.crd1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+
+ .list-group a {
+	text-decoration: none;
+}
+
+
+#id88 {
+	background-color:#ff9900;
+	color: black;
+	border-radius: 20px;
+ 
+}
+
+#id88:hover {
+  background-color: red;
+  color: white;
+}
+
+#id89 {
+	background-color:#00ff00;
+	color: black;
+	border-radius: 20px;
+ 
+}
+
+#id89:hover {
+  background-color: red;
+  color: white;
+}
+
+/**********************************/
+/*    08. SECTION 07: OUR TEAM    */
+/**********************************/   
+#id1 {
+  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+  margin: 0;
+}
+
+.ABOUT {
+  padding: 50px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.title {
+  color: red;
+}
+
+
+.HORZONTAL-BOX {
+  width: 100%;
+  height: 10rem;
+  overflow: hidden;
+  padding: 0;
+  margin-bottom: 1px;
+}
+
+
+
+/*********************** ANIMATION **********************/
+.IN-OUT {
+  animation: 2s anim-INOUT ease infinite;
+}
+
+@keyframes anim-INOUT {
+  0% {
+    color: #00ff00;
+    transform: scale(0);
+    opacity: 0;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  25% {
+    color: red;
+    transform: scale(2);
+    opacity: 1;
+    text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    color: #00ff00;
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    /* animate nothing to add pause at the end of animation */
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+
+
+/******************************/
+/*  09. SECTION 08 FOOTER     */
+/******************************/   
+.foot{
+background:black;
+padding:10px 0px;
+text-align:center;
+border: 4px solid red;
+border-radius: 60px;
+}
+
+.foot .horz{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color: #00ff00;
+font-size:0.8em;
+}
+
+.foot .horz a{
+text-decoration:none;
+color: #ff9900;
+transition:0.5s;
+}
+
+.foot .horz a:hover{
+color:#fff;
+}
+
+.foot .horz ul{
+width:100%;
+}
+
+.foot .horz ul li{
+display:inline-block;
+margin:0px 30px;
+}
+
+.foot .horz a i{
+font-size:2em;
+margin:0% 1%;
+}
+
+@media (max-width:720px){
+.foot{
+text-align:left;
+padding:5%;
+}
+.foot .horz ul li{
+display:block;
+margin:10px 0px;
+text-align:left;
+}
+.foot .horz a i{
+margin:0% 3%;
+}
+}

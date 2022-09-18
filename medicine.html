@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GORLE HOSPITAL</title>
+
+<!--------------------------------------------------->
+<!--------------------- BOOTSTRAP 4 ----------------->
+<!--------------------------------------------------->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!--------------------------------------------------->
+<!--------------------- FAVICON IMAGE --------------->
+<!--------------------------------------------------->
+<link rel="icon" type="image/x-icon" href="logo1.png">
+
+<!--------------------------------------------------->
+<!--------------------- FONT AWESOME ---------------->
+<!--------------------------------------------------->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!--------------------------------------------------->
+<!-------------- Google Fonts  ---------------------->
+<!--------------------------------------------------->
+<link href='https://fonts.googleapis.com/css?family=Angkor' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Averia Serif Libre' rel='stylesheet'>
+
+<!--------------------------------------------------->
+<!------------------------ CSS ---------------------->
+<!--------------------------------------------------->
+<link rel="stylesheet" href="style.css">
+
+
+<!--------------------------------------------------->
+<!------------------ Internal CSS ------------------->
+<!--------------------------------------------------->
+<style type="text/css">
+
+/**----------------------------=  SECTION 02: STOCK TABLE START   =----------------------------------**/
+.container{
+  background: pink;
+}
+
+.money {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 5px solid black;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #ff9980;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .head {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+
+}
+
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+
+}
+
+
+#id44{
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .money {
+    width: 100%;
+  }
+}
+
+
+
+/**----------------------------=  SECTION 03: RATINGS   =----------------------------------**/
+.heading {
+  font-size: 25px;
+  margin-right: 25px;
+}
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top:10px;
+}
+
+.middle {
+  margin-top:10px;
+  float: left;
+  width: 70%;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+}
+
+
+/**-----------------------------=  HR TAG   =-----------------------------------**/
+/* Large rounded green border */
+hr.new5 {
+  border: 6px solid green;
+  border-radius: 5px;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%=>  WebSite Name: Gorle Hospital  <=%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%=>     Made by: Ritesh Gorle      <=%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--> 
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%=>    Created: September 2022     <=%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%=>      Content: Hospital         <=%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+
+<!--------------------------------===============================------------------------------------->
+<!-----------------------------= SECTION 01: NAVIGATION BAR START =----------------------------------->
+<!--------------------------------===============================------------------------------------->
+<nav class="Fixed NAVIGATION-BAR">
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%= SECTION 01: LOGO =%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+	<div class="LOGO  UI-LOGO">
+		<a href="index.html" class="NAVIGATION-LINK"> <img src="logo1.png" width="20px" alt=""> GORLE HOSPITAL</a>
+  </div>
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%= SECTION 01: NAVIGATION BAR =%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<input type="checkbox" id="NAVIGATION" class="HIDE" />
+	<label for="NAVIGATION" class="NAVIGATION-CLEAR"><i></i><i></i><i></i></label>
+	<div class="NAVIGATION">
+		<ul class="NAVIGATION__PRODUCTS">
+			<li class="NAVIGATION__PRODUCT"><a href="index.html" class="NAVIGATION-LINK" >Home</a></li>
+			<li class="NAVIGATION__PRODUCT"><a href="doctors.html" class="NAVIGATION-LINK" >Doctors</a></li>
+			<li class="NAVIGATION__PRODUCT"><a href="medicine.html" class="NAVIGATION-LINK">Medicine</a></li>
+			<li class="NAVIGATION__PRODUCT"><a href="contact.html" class="NAVIGATION-LINK">Contact</a></li>
+		</ul>
+</div>
+
+</nav><br>
+<!--------------------------------===============================------------------------------------->
+<!-----------------------------=  SECTION 01: NAVIGATION BAR END  =----------------------------------->
+<!--------------------------------===============================------------------------------------->
+
+
+<!--------------------------------===============================------------------------------------->
+<!-----------------------------=  SECTION 02: STOCK TABLE START   =----------------------------------->
+<!--------------------------------===============================------------------------------------->
+
+<div class="container"> 
+
+<h2 style="text-align:center">Medicine Stock Tables</h2>
+<hr class="new5">
+<p style="text-align:center">We have all kinds of medicine available.</p>
+
+<div class="money columns">
+  <ul class="price">
+    <li class="head">General Sales</li>
+    <li class="grey">15% off</li>
+    <li>Liquid, tab, etc.</li>
+    <li>Bulk stock</li>
+    <li>Free Delivery</li>
+    <li class="grey"><a href="index.html" id="id44" class="button">Buy Now</a></li>
+  </ul>
+</div>
+
+<div class="money columns">
+  <ul class="price">
+    <li class="head text-dark" style="background-color:yellow">Pharmacy Medicines</li>
+    <li class="grey">20% off</li>
+    <li>Liquid, tab, etc.</li>
+    <li>Bulk stock</li>
+    <li>Free Delivery</li>
+    <li class="grey"><a href="index.html" id="id44" class="button">Buy Now</a></li>
+  </ul>
+</div>
+
+<div class="money columns">
+  <ul class="price">
+    <li class="head">Equipments</li>
+    <li class="grey">12% off</li>
+    <li>surgical stuff</li>
+    <li>per requirements</li>
+    <li>Delivery Charges</li>
+    <li class="grey"><a href="index.html" id="id44" class="button">Buy Now</a></li>
+  </ul>
+</div>
+</div>
+
+<br><br>
+<!--------------------------------===============================------------------------------------->
+<!-----------------------------=   SECTION 02: STOCK TABLE  END   =----------------------------------->
+<!--------------------------------===============================------------------------------------->
+
+
+<!--------------------------------===============================------------------------------------->
+<!-----------------------------=        SECTION 03: RATINGS       =----------------------------------->
+<!--------------------------------===============================------------------------------------->
+<div class="container">
+
+<h2 style="text-align:center">Gorle Hospital Rating</h2>
+<hr class="new5">
+ 
+<span class="heading">Patients Rating</span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<p>4.1 average based on 254 reviews.</p>
+<hr style="border:3px solid #f1f1f1">
+
+<div class="row">
+  <div class="side">
+    <div>5 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-5"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>150</div>
+  </div>
+  <div class="side">
+    <div>4 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-4"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>63</div>
+  </div>
+  <div class="side">
+    <div>3 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-3"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>15</div>
+  </div>
+  <div class="side">
+    <div>2 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-2"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>6</div>
+  </div>
+  <div class="side">
+    <div>1 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-1"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>20</div>
+  </div>
+</div>
+</div>
+
+ <br>
+<!--------------------------------===============================------------------------------------->
+<!-----------------------------=         SECTION 03: RATINGS      =----------------------------------->
+<!--------------------------------===============================------------------------------------->
+
+
+<!--------------------------------===============================------------------------------------->
+<!--------------------------------=   SECTION 04: FOOTER START  =------------------------------------->
+<!--------------------------------===============================------------------------------------->
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%= SECTION 04: CONTAINER START =%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<footer class="container-fluid">
+
+<div class="foot" align="center">
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%= SECTION 04: SOCAIL ICON =%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div class="horz ">
+<a href="index.html"><i class="fa fa-twitter"></i></a>
+<a href="index.html"><i class="fa fa-instagram"></i></a>
+<a href="index.html"><i class="fa fa-facebook"></i></a>
+<a href="index.html"><i class="fa fa-whatsapp"></i></a>
+</div>
+
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%= SECTION 04: LINKS =%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div class="horz">
+<ul>
+<li><a href="doctors.html">FAQ's</a></li>
+<li><a href="doctors.html">Doctors</a></li>
+<li><a href="medicine.html">Medicine</a></li>
+<li><a href="contact.html">About Us</a></li>
+<li><a href="contact.html">Contact us</a></li>
+</ul>
+</div>
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%= SECTION 04: RIGHTS =%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div class="horz ">
+Gorle Hospital © 2022 *All rights reserved 
+</div>
+  
+</footer><!--%%%%%%%%%%%%%%%%%%%%%%%%%%= SECTION 04: CONTAINER END =%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+
+<!--------------------------------===============================------------------------------------->
+<!--------------------------------=    SECTION 04: FOOTER END   =------------------------------------->
+<!--------------------------------===============================------------------------------------->
+ 
+
+</body>
+</html>
