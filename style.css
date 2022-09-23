@@ -575,6 +575,15 @@ input[type=submit]:hover {
 /******************************/
 /*    07. SECTION 05: CARDS   */
 /******************************/   
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  #my-content { display: none; }  /* hide it elsewhere */
+
+}
+
+@media screen and (min-width: 1201px) and (max-width: 4000px) {
+  #my-content { display:block; }  /* show it on big screens */
+   
+}
 
 
 .crd-co {
